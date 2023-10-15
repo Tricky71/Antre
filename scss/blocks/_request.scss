@@ -1,0 +1,23 @@
+.request__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    & p {
+      width: 90%;
+      text-align: center;
+    }
+}
+
+.request__title {
+  margin-bottom: 10px;
+}
+
+@media(min-width: $tablet-width) {
+  .request__wrapper {
+    align-items: center;
+  }
+
+  .request__title {
+    margin-bottom: 20px;
+  }
+}

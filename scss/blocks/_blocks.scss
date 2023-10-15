@@ -1,0 +1,37 @@
+.blocks {
+  padding: 40px 0;
+  & .container-fluid {
+    padding: 0;
+  }
+}
+
+.blocks__image {
+  max-width: 950px;
+}
+
+.blocks__image--2,
+.blocks__image--5 {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+@media(min-width: 768px) {
+  .blocks__image {
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .blocks {
+    padding: 60px 0;
+  }
+  .blocks__image {
+    margin-bottom: 40px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .blocks {
+    padding: 120px 0 80px;
+  }
+}
+

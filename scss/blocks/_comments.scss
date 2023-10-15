@@ -1,0 +1,19 @@
+.comments {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.comments__item {
+  margin-bottom: 10px;
+}
+
+@media(min-width: $desktop-width) {
+  .comments {
+    font-size: 15.5px;
+  }
+
+  .comments__list {
+    margin: 0;
+    padding: 0;
+  }
+}
