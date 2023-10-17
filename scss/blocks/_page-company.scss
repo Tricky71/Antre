@@ -1,0 +1,111 @@
+.page-company {
+  padding: 80px 0 40px;
+  margin-top: -50px;
+  background-color: #F3F4F6;
+}
+
+.page-company__top {
+  & .page-company__image {
+    margin-bottom: 20px;
+  }
+}
+
+.page-company__bottom {
+  & .comments {
+    margin-bottom: 20px;
+    & p {
+      margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+  }
+}
+
+.page-company__info {
+  & h4 {
+    margin-bottom: 10px;
+  }
+}
+
+.page-company__image {
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+@media(min-width: $tablet-width) {
+  .page-company {
+    padding: 125px 0 10px;
+  }
+
+  .page-company__wrapper {
+    height: 100%;
+    background: bottom 10px left 0 / 22% no-repeat url('../img/page-company-3.png');
+  }
+
+  .page-company__top {
+    display: flex;
+    justify-content: space-between;
+      & .page-company__info {
+        max-width: 28%;
+        padding-top: 20px;
+      }
+      & .page-company__image {
+        max-width: 65%;
+      }
+  }
+
+  .page-company__bottom {
+    max-width: 79%;
+    margin-left: auto;
+    margin-top: -65px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+      & .page-company__info {
+        max-width: 34%;
+        padding-top: 70px;
+      }
+      & .page-company__image {
+        max-width: 63%;
+      }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .page-company {
+    padding: 218px 0 140px;
+    margin-top: -110px;
+  }
+
+  .page-company__wrapper {
+    background: bottom 60px left -25px / 26% no-repeat url('../img/page-company-3.png');
+  }
+
+  .page-company__top {
+      & h4 {
+        
+      }
+      & .page-company__info {
+        max-width: 28%;
+        padding-top: 20px;
+        line-height: 1.4;
+      }
+      & .page-company__image {
+        max-width: 75%;
+      }
+  }
+
+  .page-company__bottom {
+    max-width: 79%;
+    margin-top: -90px;
+    margin-bottom: 105px;
+      & .page-company__info {
+        max-width: 27.9%;
+        padding-top: 105px;
+        line-height: 1.4;
+      }
+      & .page-company__image {
+        max-width: 68%;
+      }
+  }
+}

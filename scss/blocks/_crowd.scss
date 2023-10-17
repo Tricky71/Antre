@@ -1,0 +1,35 @@
+.crowd {
+  padding: 20px 0;
+  margin-bottom: 40px;
+  background-color: #F3F4F6;
+  & h4 {
+    margin-bottom: 20px;
+  }
+  & .slider__list {
+    padding: 0;
+    width: 118%;
+  }
+}
+
+.crowd__wrapper {
+  overflow: hidden;
+}
+
+@media(min-width: $tablet-width) {
+  .crowd {
+    padding: 40px 0;
+    & h4 {
+    margin-bottom: 40px;
+  }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .crowd {
+    padding: 60px 0;
+    margin-bottom: 85px;
+    & h4 {
+    margin-bottom: 40px;
+    }
+  }
+}

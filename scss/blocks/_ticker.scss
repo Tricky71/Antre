@@ -3,10 +3,22 @@
   margin: 0 auto;
   padding: 15px 0;
   background-color: $drk;
+    &--2 {
+      & .ticker__wrapper {
+        flex-direction: row-reverse;
+      }
+      & .ticker__item {
+        color: $accent;
+      }
+      & .marquee {
+        animation: scroll-reverse 20s linear infinite;
+      }
+    }
 }
 
 .ticker__wrapper {
   display: flex;
+  
   overflow: hidden;
   gap: 20px;
 }
@@ -18,11 +30,16 @@
 }
 
 .ticker__item {
+  
   color: #fff;
 }
 
 .marquee {
   animation: scroll 20s linear infinite;
+}
+
+.marquee-2 {
+  animation: scroll-reverse 20s linear infinite;
 }
 
 @keyframes scroll {
@@ -34,8 +51,22 @@
   }
 }
 
+@keyframes scroll-reverse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100% + 20px));
+  }
+}
+
 @media(min-width: $tablet-width) {
   .ticker {
-    padding: 26px 0;
+    padding: 18px 0;
+  }
+
+  .ticker__item {
+    font-size: 24px;
+    color: #fff;
   }
 }

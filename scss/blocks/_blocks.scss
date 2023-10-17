@@ -1,15 +1,20 @@
 .blocks {
   padding: 40px 0;
+  &--2 {
+    padding: 0;
+    padding-bottom: 40px;
+  }  
   & .container-fluid {
     padding: 0;
   }
 }
 
 .blocks__image {
-  max-width: 950px;
+  max-width: 940px;
 }
 
 .blocks__image--2,
+.blocks__image--6,
 .blocks__image--5 {
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.20);
 }
@@ -23,7 +28,15 @@
 @media(min-width: $tablet-width) {
   .blocks {
     padding: 60px 0;
+    &--2 {
+      padding: 0;
+      padding-bottom: 60px;
+      & .blocks__image {
+        margin-bottom: 0;
+      }  
+    }
   }
+
   .blocks__image {
     margin-bottom: 40px;
   }
@@ -31,7 +44,18 @@
 
 @media(min-width: $desktop-width) {
   .blocks {
-    padding: 120px 0 80px;
+    &--2 {
+      padding: 0;
+      padding-bottom: 120px;
+      margin-top: -180px;
+    }  
+    padding: 120px 0 90px;
+  }
+
+  .blocks__image--2, 
+  .blocks__image--5, 
+  .blocks__image--7 {
+    margin-left: auto;
   }
 }
 
